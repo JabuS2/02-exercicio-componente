@@ -1,0 +1,9 @@
+<!-- primeiro-componente.component.html -->
+<input (input)="textoTemporario = $any($event.target).value" type="text">
+<p>{{ texto }}</p>
+<button [class.vermelho]="aplicarClasseVermelha" (click)="atualizarTexto()">Atualizar Texto</button>
+<button (click)="mudarCorDoBotao()">Mudar Cor do Primeiro Botão</button>
+
+
+<app-segundo-componente></app-segundo-componente>
+
